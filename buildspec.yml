@@ -9,7 +9,6 @@ phases:
       - export GOPATH=${CODEBUILD_SRC_DIR}/..
       - ls -al
       - mkdir vendor
-      - dep init
       - dep ensure
   build:
     commands:
