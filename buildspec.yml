@@ -9,8 +9,9 @@ phases:
       - go get github.com/qowns8/ideaweb
       - go env
       - echo GOPATH=$GOROOT/src/qowns8/ideaweb
-      - cd GOPATH
+      - cd $GOPATH
       - ls -al
+      - cd ./github.com/qowns8/ideaweb
       - mkdir vendor
       - dep ensure
   build:
