@@ -8,8 +8,8 @@ phases:
     commands:
       - go get github.com/qowns8/ideaweb
       - go env
-      - echo GOPATH=$HOME/go/src/qowns8/ideaweb
-      - cd $GOPATH
+      - echo GOPATH=$GOROOT/src/qowns8/ideaweb
+      - cd GOPATH
       - ls -al
       - mkdir vendor
       - dep ensure
