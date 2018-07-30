@@ -6,7 +6,7 @@ phases:
       - go get -u github.com/golang/dep/cmd/dep
   pre_build:
     commands:
-      - export GOPATH=${CODEBUILD_SRC_DIR}
+      - export GOPATH=${CODEBUILD_SRC_DIR}/..
       - ls -al
       - mkdir vendor
       - dep init
