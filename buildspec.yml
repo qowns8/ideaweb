@@ -4,15 +4,6 @@ phases:
   install:
     commands:
       - go get -u github.com/golang/dep/cmd/dep
-  pre_build:
-    commands:
-      - go get github.com/qowns8/ideaweb
-      - go env
-      - export GOPATH=$GOROOT/src/qowns8/ideaweb
-      - cd $GOPATH
-      - ls -al
-      - cd ./github.com/qowns8/ideaweb
-      - mkdir vendor
       - dep ensure
   build:
     commands:
