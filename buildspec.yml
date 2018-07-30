@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - go get -u github.com/golang/dep/cmd/dep
+  pre_build:
+    commands:
+      - mkdir pkg
+      - cd ./src/github.com/qowns8/ideaweb
+      - ls -al
+      - mkdir vendor
+      - dep init
+      - dep ensure
+  build:
+    commands:
+      - go build
+artifacts:
+  files:
+    - ideaweb
