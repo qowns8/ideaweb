@@ -8,7 +8,7 @@ phases:
     commands:
       - go get github.com/qowns8/ideaweb
       - go env
-      - echo GOPATH=$GOROOT/src/qowns8/ideaweb
+      - export GOPATH=$GOROOT/src/qowns8/ideaweb
       - cd $GOPATH
       - ls -al
       - cd ./github.com/qowns8/ideaweb
