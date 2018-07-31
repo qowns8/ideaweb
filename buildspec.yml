@@ -14,7 +14,10 @@ phases:
   build:
     commands:
       - go build -o bin/application main.go
+  after_build:
+    commands:
+      - cd bin
       - ls -al
 artifacts:
   files:
-    - bin/application
+    - application
