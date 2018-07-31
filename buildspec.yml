@@ -8,7 +8,7 @@ phases:
       - cd ./src
       - mkdir github.com
       - cd github.com
-      - makdir qowns8
+      - mkdir qowns8
       - cd qowns8
       - git clone https://github.com/qowns8/ideaweb
       - cd ideaweb
