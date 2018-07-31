@@ -13,8 +13,8 @@ phases:
       - dep ensure
   build:
     commands:
-      - go build main.go
+      - go build -o bin/application main.go
       - ls -al
 artifacts:
   files:
-    - main
+    - bin/application
