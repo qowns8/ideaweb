@@ -13,7 +13,7 @@ phases:
       - dep ensure
   build:
     commands:
-      - go build main.go
+      - go build main.go ideaweb
       - ls -al
 artifacts:
   files:
