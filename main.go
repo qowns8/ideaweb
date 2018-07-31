@@ -11,5 +11,5 @@ func main() {
 	var route = router.Router{}
 
 	println("serve start")
-	log.Fatal(http.ListenAndServe("", &route ))
+	log.Fatal(http.ListenAndServe(":80", &route ))
 }

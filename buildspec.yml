@@ -8,6 +8,8 @@ phases:
       - cd ./src
       - mkdir github.com
       - cd github.com
+      - makdir qowns8
+      - cd qowns8
       - git clone https://github.com/qowns8/ideaweb
       - cd ideaweb
       - dep ensure
@@ -16,5 +18,5 @@ phases:
       - go build -o bin/application main.go
 artifacts:
   files:
-    - src/github.com/ideaweb/bin/application
+    - src/github.com/qowns8/ideaweb/bin/application
   discard-paths: yes
