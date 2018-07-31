@@ -13,8 +13,8 @@ phases:
       - dep ensure
   build:
     commands:
-      - go build
+      - go build main.go
       - ls -al
 artifacts:
   files:
-    - ${CODEBUILD_SRC_DIR}/src/github.com/ideaweb/ideaweb
+    - main
