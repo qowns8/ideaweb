@@ -16,4 +16,4 @@ phases:
       - go build -o bin/application main.go
 artifacts:
   files:
-    - src/github.com/ideaweb/bin/application
+    - *
