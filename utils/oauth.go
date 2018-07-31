@@ -20,7 +20,7 @@ type User struct {
 }
 
 const (
-	CallBackURL = "http://Testserver-env.miwxirpfwi.ap-northeast-2.elasticbeanstalk.com/auth/callback"
+	CallBackURL = "http://Testserver-env.miwxirpfwi.ap-northeast-2.elasticbeanstalk.com:5000/auth/callback"
 
 	UserInfoAPIEndpoint = "https://www.googleapis.com/oauth2/v3/userinfo"
 	ScopeEmail          = "https://www.googleapis.com/auth/userinfo.email"
