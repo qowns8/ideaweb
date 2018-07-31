@@ -13,6 +13,8 @@ phases:
       - cd github.com
       - ls -al
       - git clone https://github.com/qowns8/ideaweb
+      - ls -al
+      - cd ideaweb
       - dep ensure
   build:
     commands:
