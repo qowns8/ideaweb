@@ -17,4 +17,4 @@ phases:
       - ls -al
 artifacts:
   files:
-    - ideaweb
+    - ${CODEBUILD_SRC_DIR}/src/github.com/ideaweb/ideaweb
