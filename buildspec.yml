@@ -16,4 +16,5 @@ phases:
       - go build -o bin/application main.go
 artifacts:
   files:
-    - src/github.com/ideaweb
+    - src/github.com/qowns8/bin/application
+  discard-paths: yes
