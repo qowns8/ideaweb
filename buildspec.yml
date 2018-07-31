@@ -20,4 +20,4 @@ phases:
       - ls -al
 artifacts:
   files:
-    - application
+    - ./application
