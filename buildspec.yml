@@ -5,20 +5,15 @@ phases:
     commands:
       - go get -u github.com/golang/dep/cmd/dep
       - mkdir src
-      - ls -al
       - cd ./src
-      - ls -al
       - mkdir github.com
-      - ls -al
       - cd github.com
-      - ls -al
       - git clone https://github.com/qowns8/ideaweb
-      - ls -al
       - cd ideaweb
       - dep ensure
   build:
     commands:
-      - go build
+      - go build -o
 artifacts:
   files:
     - ideaweb
