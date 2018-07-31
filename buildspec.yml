@@ -17,4 +17,4 @@ phases:
       - ls -al
 artifacts:
   files:
-    - ./main
+    - ideaweb
